@@ -1,7 +1,12 @@
 {
-  "name": "gamma-sdk",
+  "name": "@hamchowderr/gamma-sdk",
   "version": "1.0.0",
   "description": "TypeScript SDK for the Gamma API",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hamchowderr/gamma-sdk-typescript.git"
+  },
+  "homepage": "https://github.com/hamchowderr/gamma-sdk-typescript",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -28,7 +33,7 @@
     "document",
     "typescript"
   ],
-  "author": "",
+  "author": "hamchowderr <tylan@otakusolutions.io>",
   "license": "MIT",
   "engines": {
     "node": ">=18.0.0"

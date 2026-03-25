@@ -1,6 +1,6 @@
-# gamma-sdk
+# @hamchowderr/gamma-sdk
 
-[![npm version](https://img.shields.io/npm/v/gamma-sdk.svg)](https://www.npmjs.com/package/gamma-sdk)
+[![npm version](https://img.shields.io/npm/v/%40hamchowderr%2Fgamma-sdk.svg)](https://www.npmjs.com/package/@hamchowderr/gamma-sdk)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/)
 
@@ -35,13 +35,13 @@ The Gamma API is straightforward, but this SDK handles the boilerplate so you do
 ## Installation
 
 ```bash
-npm install gamma-sdk
+npm install @hamchowderr/gamma-sdk
 ```
 
 ## Quick Start
 
 ```typescript
-import { GammaClient } from 'gamma-sdk';
+import { GammaClient } from '@hamchowderr/gamma-sdk';
 
 // Create a client with your API key
 const client = new GammaClient({
@@ -64,7 +64,7 @@ console.log('Credits used:', result.credits.deducted);
 ### Basic Generation
 
 ```typescript
-import { GammaClient } from 'gamma-sdk';
+import { GammaClient } from '@hamchowderr/gamma-sdk';
 
 const client = new GammaClient({
   apiKey: 'sk-gamma-your-api-key',
@@ -86,7 +86,7 @@ console.log('View your gamma at:', result.gammaUrl);
 The SDK provides a fluent builder API for constructing requests with full IDE autocomplete support.
 
 ```typescript
-import { GammaClient, GammaRequest } from 'gamma-sdk';
+import { GammaClient, GammaRequest } from '@hamchowderr/gamma-sdk';
 
 const client = new GammaClient({
   apiKey: 'sk-gamma-your-api-key',
@@ -215,7 +215,7 @@ GammaRequest.create('Topic').generate()
 Generate content based on an existing gamma template.
 
 ```typescript
-import { GammaClient, GammaTemplateRequest } from 'gamma-sdk';
+import { GammaClient, GammaTemplateRequest } from '@hamchowderr/gamma-sdk';
 
 const client = new GammaClient({
   apiKey: 'sk-gamma-your-api-key',
@@ -282,7 +282,7 @@ if (status.status === 'completed' && status.warnings) {
 Use the `isGenerationFailed` type guard to check for failed status.
 
 ```typescript
-import { isGenerationFailed, isGenerationCompleted } from 'gamma-sdk';
+import { isGenerationFailed, isGenerationCompleted } from '@hamchowderr/gamma-sdk';
 
 const status = await client.generations.getStatus(generationId);
 
@@ -478,7 +478,7 @@ import {
   RateLimitError,
   PollingTimeoutError,
   PollingCancelledError,
-} from 'gamma-sdk';
+} from '@hamchowderr/gamma-sdk';
 
 try {
   const result = await client.generations.createAndWait({
@@ -575,14 +575,14 @@ import type {
   ImageOptions,
   CardOptions,
   SharingOptions,
-} from 'gamma-sdk';
+} from '@hamchowderr/gamma-sdk';
 
 // Type guards
 import {
   isGenerationCompleted,
   isGenerationPending,
   isGenerationFailed,
-} from 'gamma-sdk';
+} from '@hamchowderr/gamma-sdk';
 ```
 
 ## Requirements
