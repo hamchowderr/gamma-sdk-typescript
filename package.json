@@ -1,5 +1,5 @@
 {
-  "name": "@hamchowderr/gamma-sdk",
+  "name": "@chowderr/gamma-sdk",
   "version": "1.0.0",
   "description": "TypeScript SDK for the Gamma API",
   "repository": {
